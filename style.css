@@ -182,7 +182,7 @@ p {
 
 /* Add these CSS rules for buttons and footer */
 .buttons {
-  margin-top: 10px; /* Add space between buttons and footer */
+  margin-top: 40px; /* Add space between buttons and footer */
 }
 
 .btn {
@@ -209,12 +209,12 @@ p {
   color: #f1f1f1;
 }
 
-/*.footer {
+.footer {
   position: absolute;
-  bottom: 10px;
+  /*bottom: 40px; /* Adjust the value as needed */
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   color: gray;
   padding: 16px;
-}*/
+}
