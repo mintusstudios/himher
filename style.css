@@ -29,12 +29,44 @@ body {
   }
 }
 
+/* Add these CSS rules for centering and spacing */
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content {
+  margin-bottom: 20px; /* Add some space between content and buttons */
+}
+
+.buttons {
+  margin-top: 60px; /* Add space between buttons and footer */
+}
+
+
+
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire viewport */
+  z-index: -1;
+}
+
+
+
 h1 {
   font-weight: bold;
   font-size: 80px;
   color: #db3458;
-  text-align: center;
-  padding-top: 0%;
+  padding-top: 0;
+  margin: 0;
 }
 
 p {
@@ -46,13 +78,11 @@ p {
   margin-top: 0;
 }
 
-.wrapper {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  /*-ms-transform: translate(50%, -50%);*/
-  transform: translate(0%, 110%);
-}
+
+
+/* Rest of your existing CSS */
+/* ... */
+
 
 .home__img {
   display: block;
@@ -161,7 +191,11 @@ li:hover {
   transition: 0.55;
 }
 
-footer {
+.footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   color: gray;
   padding: 16px;
