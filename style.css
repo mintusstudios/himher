@@ -182,7 +182,7 @@ p {
 
 /* Add these CSS rules for buttons and footer */
 .buttons {
-  margin-top: 40px; /* Add space between buttons and footer */
+  margin-top: 10px; /* Add space between buttons and footer */
 }
 
 .btn {
