@@ -28,18 +28,18 @@
         z-index: -1; /* Place the video behind other content */
       }
     </style>
-  </head>
-  <body>
-    <video autoplay muted loop>
+    </head>
+    <body>
+      <video autoplay muted loop>
       <!-- You can add additional attributes like controls if needed -->
       <source src="video.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
 
     <div class="wrapper">
-      <h1>Him/Her</h1>
-
-      <p>Hosting Open Stage: 21.09.2023 / Kelly's Pub Mainz</p>
+      <div class="content">
+        <h1>Him/Her</h1>
+        <p>Hosting Open Stage: 21.09.2023 / Kelly's Pub Mainz</p>
       <p>Konzert: 21.09.2023 / Irish Pub Mainz</p>
       <p>Hosting Open Stage: 28.09.2023 / Kelly's Pub Mainz</p>
       <p>Konzert: 30.09.2023 / Kelly's Pub Mainz</p>
@@ -49,9 +49,8 @@
       <p>Konzert: 02.12.2023 / Kelly's Pub Mainz</p>
       <p>Konzert: 09.12.2023 / Kelly's Pub Mainz</p>
 
-      <a class="btn" href="https://www.instagram.com/himherband/"
-        ><i class="fa fa-instagram"></i>
-      </a>
+      <div class="buttons">
+        <a class="btn" href="https://www.instagram.com/himherband/"><i class="fa fa-instagram"></i></a>
       <!--<a class="btn" href=""><i class="fa fa-youtube"></i> </a>-->
       <a
         class="btn"
@@ -60,7 +59,9 @@
       </a>
 
       <!-- <img src="himher.jpg" alt="picture" class="home__img" /> -->
-      <div class="footer">Copyright 2023 | himherband@gmail.com</div>
+      <div class="footer">
+        Copyright 2023 | <a href="mailto:himherband@gmail.com?subject=Feedback&body=Message">himherband@gmail.com</a>
+      </div>
     </div>
   </body>
 </html>
