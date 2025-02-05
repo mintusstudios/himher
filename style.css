@@ -1,28 +1,43 @@
 /* style.css */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Modernere Schrift */
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f8f8f8;
+    background-color: #fafafa;
     line-height: 1.6;
+}
+
+/* Farbakzente */
+:root {
+    --primary-color: #ff7b54; /* Warmes Korallenrot */
+    --secondary-color: #ffcc29; /* Sonniges Gelb */
+    --accent-color: #73c2fb; /* Pastelliges Blau */
+    --text-color: #333;
+    --background-color: #f8f8f8;
 }
 
 header.hero {
     text-align: center;
-    background: #333 url('bild1.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bild1.jpg') center/cover no-repeat;
     color: #fff;
-    padding: 60px 20px;
+    padding: 80px 20px;
+    border-bottom: 5px solid var(--primary-color);
 }
 
 header.hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-weight: 700;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 header.hero .intro {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    color: #fff;
 }
 
 .about, .instagram, .contact {
@@ -33,18 +48,28 @@ header.hero .intro {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--primary-color);
 }
 
 .about h2, .instagram h2, .contact h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    color: var(--primary-color);
     margin-bottom: 20px;
-    color: #555;
+    font-weight: 600;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
 }
 
 .about-img, .hero-img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    margin-top: 20px;
+    border: 3px solid var(--secondary-color);
 }
 
 .instagram .videos {
@@ -57,45 +82,23 @@ header.hero .intro {
 .instagram .video-preview {
     width: 200px;
     height: 120px;
-    background: #ddd;
+    background: var(--accent-color);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 1rem;
-    color: #333;
+    font-weight: 500;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.instagram .video-preview:hover {
+    transform: scale(1.05);
 }
 
 .contact form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-}
-
-.contact input, .contact textarea, .contact button {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.contact button {
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.contact button:hover {
-    background: #555;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
-    color: #fff;
-}
+    gap:
