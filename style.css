@@ -1,4 +1,93 @@
-* {
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    margin-top: 50vh; /* Verschiebt den Inhalt nach unten */
+    transform: translateY(-50%); /* Zentrale Ausrichtung trotz margin-top */
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.button.hover-scale {
+    transform: scale(1.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5em;
+    }
+
+    .button {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em;
+    }
+
+    .button {
+        padding: 8px 16px;
+    }
+}
+
+/* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,7 +119,7 @@ body {
 }
 
 /* Add these CSS rules for centering and spacing */
-.wrapper {
+/*.wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -45,7 +134,7 @@ body {
 /* ... */
 
 
-.home__img {
+/*.home__img {
   display: block;
   margin: auto;
   padding-top: 5%;
@@ -136,18 +225,18 @@ li:hover {
 
 
 /* Add these CSS rules for video dimensions */
-video {
+/*video {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensure the video covers the entire viewport */
-  z-index: -1;
+ /* z-index: -1;
 }
 
 /* Add these CSS rules for overlay and content */
-.overlay {
+/*.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -181,9 +270,9 @@ p {
 }
 
 /* Add these CSS rules for buttons and footer */
-.buttons {
+/*.buttons {
   margin-top: 40px; /* Add space between buttons and footer */
-}
+/*}
 
 .btn {
   display: inline-block;
@@ -212,7 +301,7 @@ p {
 .footer {
   position: absolute;
   /*bottom: 40px; /* Adjust the value as needed */
-  left: 50%;
+ /* left: 50%;
   transform: translateX(-50%);
   text-align: center;
   color: gray;
