@@ -47,6 +47,22 @@ header.hero .intro {
     color: var(--text-light);
 }
 
+/* Das Bild unter der Überschrift */
+.hero-img-wrapper {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 3px solid var(--secondary-color);
+    border-radius: 8px;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* Allgemeine Sektionen */
 section {
     max-width: 900px;
@@ -72,7 +88,7 @@ section p {
 }
 
 /* Bilder mit Alt-Tags */
-.about-img, .hero-img {
+.about-img {
     width: 100%;
     height: auto;
     border-radius: 8px;
