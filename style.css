@@ -5,17 +5,17 @@ body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #fff;
+    background: url('bild1.jpg') center/cover no-repeat fixed;
     line-height: 1.6;
 }
 
 /* Header / Hero Section */
 header.hero {
     text-align: center;
-    background: url('bild1.jpg') center/cover no-repeat fixed;
     color: #fff;
-    padding: 80px 20px;
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund für bessere Lesbarkeit */
 }
 
 header.hero h1 {
@@ -23,22 +23,13 @@ header.hero h1 {
     font-weight: 700;
     margin: 0;
     text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 header.hero .intro {
     font-size: 1.2rem;
     margin-top: 10px;
-}
-
-/* Hero Image */
-.hero-img-wrapper {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.hero-img {
-    max-width: 80%;
-    height: auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 /* Section Styling */
@@ -46,15 +37,16 @@ section {
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.8); /* Transparenter Hintergrund */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
 }
 
 section h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #333;
+    color: #000;
 }
 
 section p {
@@ -64,10 +56,13 @@ section p {
 
 /* About Image */
 .about-img {
-    width: 100%;
+    width: 70%; /* Reduziert die Größe des zweiten Bildes */
     height: auto;
     border-radius: 10px;
     margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Instagram Section */
@@ -90,7 +85,7 @@ section p {
     margin-bottom: 10px;
 }
 
-/* Contact Form */
+/* Kontaktformular */
 .contact form {
     display: flex;
     flex-direction: column;
