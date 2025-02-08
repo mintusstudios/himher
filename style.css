@@ -1,66 +1,69 @@
 /* Neue Schriftart */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     color: #f0f0f0;
-    background: url('bild1.jpg') center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('bild1.jpg') center/cover no-repeat fixed; /* Hintergrund abgedunkelt */
     line-height: 1.6;
 }
 
 /* Header / Hero Section */
 header.hero {
-    padding: 100px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     color: #fff;
+    padding: 100px 20px;
 }
 
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.hero-content img.hero-image {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.hero-text h1 {
-    font-size: 3rem;
+header.hero h1 {
+    font-size: 4rem; /* Überschrift vergrößert */
     font-weight: 700;
     margin: 0;
     text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.hero-text .intro {
-    font-size: 1.2rem;
+header.hero .intro {
+    font-size: 1.5rem; /* Unterüberschrift vergrößert */
     margin-top: 10px;
 }
 
-/* Section Styling */
-section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    color: #f0f0f0;
+/* About Section */
+.about-content {
+    display: flex;
+    flex-direction: column; /* Standard für mobile Geräte */
+    align-items: center;
+    gap: 20px;
 }
 
-section h2 {
-    font-size: 2rem;
+.about-text h2 {
+    font-size: 2.5rem; /* Überschrift vergrößert */
     margin-bottom: 15px;
-    color: #f0f0f0;
 }
 
-section p {
-    font-size: 1.1rem;
+.about-text p {
+    font-size: 1.2rem;
     line-height: 1.8;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Anpassung für Desktop */
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row; /* Bild links neben dem Text */
+        align-items: flex-start;
+    }
+
+    .about-img {
+        margin-right: 20px;
+    }
 }
 
 /* Instagram Section */
@@ -80,17 +83,6 @@ section p {
 
 .instagram .button:hover {
     background-color: #555;
-}
-
-/* About Image */
-.location-img {
-    width: 70%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Kontaktformular */
