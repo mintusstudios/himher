@@ -1,35 +1,47 @@
-/* Schriftarten importieren */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+/* Neue Schriftart */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: #f0f0f0;
     background: url('bild1.jpg') center/cover no-repeat fixed;
     line-height: 1.6;
 }
 
 /* Header / Hero Section */
 header.hero {
-    text-align: center;
-    color: #fff;
     padding: 100px 20px;
-    background: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund für bessere Lesbarkeit */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
 
-header.hero h1 {
-    font-size: 3.5rem;
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-content img.hero-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
     font-weight: 700;
     margin: 0;
     text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-header.hero .intro {
+.hero-text .intro {
     font-size: 1.2rem;
     margin-top: 10px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 /* Section Styling */
@@ -37,32 +49,18 @@ section {
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8); /* Transparenter Hintergrund */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: #333;
+    color: #f0f0f0;
 }
 
 section h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #000;
+    color: #f0f0f0;
 }
 
 section p {
     font-size: 1.1rem;
     line-height: 1.8;
-}
-
-/* About Image */
-.about-img {
-    width: 70%; /* Reduziert die Größe des zweiten Bildes */
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Instagram Section */
@@ -72,17 +70,27 @@ section p {
     justify-content: center;
 }
 
-.instagram .video-preview {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.instagram .button {
     text-decoration: none;
-    color: #333;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
-.instagram .video-preview img {
-    width: 50px;
-    margin-bottom: 10px;
+.instagram .button:hover {
+    background-color: #555;
+}
+
+/* About Image */
+.location-img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Kontaktformular */
@@ -117,6 +125,6 @@ section p {
 footer {
     text-align: center;
     padding: 20px;
-    background: #333;
+    background: #000;
     color: #fff;
 }
