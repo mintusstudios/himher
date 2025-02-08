@@ -1,79 +1,76 @@
-/* Schriftarten */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Him/Her ist ein erfahrenes Musik-Duo aus Mainz, das Hochzeiten und andere Events musikalisch begleitet. Perfekte Live-Musik für Ihre Hochzeit.">
+    <meta name="keywords" content="Hochzeits-Duo Mainz, Hochzeitsband Mainz, Live-Musik Hochzeit, Musik für Hochzeit Mainz, Hochzeit Band">
+    <meta name="author" content="Him/Her">
+    <meta name="robots" content="index, follow">
+    <title>Him/Her - Hochzeits-Duo aus Mainz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon-96x96.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-72x72.png">
+</head>
+<body>
+    <!-- Header / Hero Section -->
+    <header class="hero">
+        <img src="bild1.jpg" alt="Hochzeits-Duo Him/Her" class="hero-img">
+        <h1>Him/Her - Euer Hochzeits-Duo aus Mainz</h1>
+        <p class="intro">Unvergessliche Live-Musik für Hochzeiten und besondere Momente.</p>
+    </header>
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #f0f0f0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('bild1.jpg') center/cover no-repeat fixed;
-    line-height: 1.6;
-}
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-content">
+            <img src="bild1.jpg" alt="Hochzeits-Duo Him/Her bei einem Auftritt" class="about-img">
+            <div class="about-text">
+                <h2>Hochzeitsmusik vom Profi-Duo</h2>
+                <p>
+                    Wir sind Him/Her, ein erfahrenes Musik-Duo, das bereits auf vielen Hochzeiten und Veranstaltungen in Mainz und Umgebung gespielt hat. 
+                    Unsere Musik macht euren besonderen Tag unvergesslich. Von romantischen Balladen bis hin zu stimmungsvoller Tanzmusik – wir sorgen für die passende Atmosphäre.
+                </p>
+            </div>
+        </div>
+        <img src="bild.jpg" alt="Him/Her bei einer Hochzeitsfeier" class="about-secondary-img">
+    </section>
 
-/* Header / Hero Section */
-header.hero {
-    text-align: center;
-    padding: 20px;
-}
+    <!-- Instagram Section -->
+    <section class="instagram">
+        <h2>Unsere Musik auf Instagram</h2>
+        <p>Schaut euch unsere neuesten Videos an und gewinnt einen Einblick in unsere Auftritte.</p>
+        <div class="videos">
+            <a href="https://www.instagram.com/reel/C_bZn2-sSoX/?igsh=NTJjcm04ZmpxZmVu" target="_blank" class="button">Video 1</a>
+            <a href="https://www.instagram.com/reel/Cy0ELVFsmDI/?igsh=MXRxbHB3Mzdjd3NvYg==" target="_blank" class="button">Video 2</a>
+        </div>
+    </section>
 
-header.hero h1 {
-    font-size: 2.2rem; /* Überschrift kleiner gemacht */
-    margin-top: 10px;
-}
+    <!-- Location Section -->
+    <section class="location">
+        <h2>Euer Hochzeits-Duo aus Mainz</h2>
+        <p>
+            Him/Her ist in Mainz und Umgebung aktiv. Ob Wiesbaden, Frankfurt, Darmstadt oder im Rheingau – wir begleiten eure Hochzeit oder Feier mit einzigartiger Live-Musik.
+        </p>
+    </section>
 
-header.hero .intro {
-    font-size: 1rem;
-    margin-top: 10px;
-}
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Kontakt</h2>
+        <p>Hinterlasst uns eine Nachricht, und wir melden uns bei euch!</p>
+        <form action="mailto:himherband@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Euer Name" required>
+            <input type="email" name="email" placeholder="Eure E-Mail-Adresse" required>
+            <textarea name="message" rows="5" placeholder="Eure Nachricht" required></textarea>
+            <button type="submit">Nachricht senden</button>
+        </form>
+    </section>
 
-header.hero .hero-img {
-    width: 90%; /* Bild für Handy angepasst */
-    max-width: 300px;
-    margin: 0 auto;
-    display: block;
-    border-radius: 10px;
-}
-
-/* About Section */
-.about-content {
-    display: flex;
-    flex-direction: column; /* Standard für mobile Geräte */
-    align-items: center;
-    gap: 20px;
-}
-
-.about-text h2 {
-    font-size: 1.8rem; /* Größe der Überschrift angepasst */
-    margin-bottom: 15px;
-}
-
-.about-text p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-.about-img {
-    width: 80%;
-    max-width: 250px; /* Hauptbild kleiner */
-    border-radius: 10px;
-}
-
-.about-secondary-img {
-    display: block;
-    width: 100%;
-    max-width: 350px; /* Zweites Bild kleiner gemacht */
-    margin: 20px auto;
-    border-radius: 10px;
-}
-
-/* Desktop Anpassungen */
-@media (min-width: 768px) {
-    .about-content {
-        flex-direction: row; /* Bild links neben dem Text */
-        align-items: flex-start;
-    }
-
-    .about-img {
-        margin-right: 20px;
-    }
-}
+    <!-- Footer Section -->
+    <footer>
+        <p>
+            Folgt uns auf <a href="https://www.instagram.com/himherduo?igsh=emczb2xmN2pjcWdh" target="_blank">Instagram</a> oder schreibt uns direkt an: 
+            <a href="mailto:himherband@gmail.com">himherband@gmail.com</a>
+        </p>
+    </footer>
+</body>
+</html>
